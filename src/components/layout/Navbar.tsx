@@ -44,22 +44,11 @@ export function Navbar({ dark = false, absolute = false }: NavbarProps) {
       >
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-full border-2 border-cyan-400 flex items-center justify-center group-hover:bg-cyan-400/10 transition-colors duration-300">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              className="w-5 h-5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <path
-                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                stroke="rgb(34,211,238)"
-                strokeLinejoin="round"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
+          <img
+            src="/hero/logo.png?v=2"
+            alt="Chinmaya AUV Logo"
+            className="h-16 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
+          />
           <div className="leading-tight">
             <span className="font-[Orbitron] text-xl font-bold tracking-wider text-white block">
               CHINMAYA
